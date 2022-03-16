@@ -38,7 +38,7 @@ async def on_ready():
 # Checks if member activity has changed
 async def on_member_update(before, after):
     game = ["battlefield 1", "visual studio code"]
-    channel = bot.get_channel(id= 276664033971535873)
+    channel = bot.get_channel(id= None # Insert channel ID)
 
     if after.activity and after.activity.name.lower() == game[0]:
         bf_response = f"{after.mention} Playing BF1?\n https://c.tenor.com/W5fgIZhzwiAAAAAM/eyebrow-dwayne-johnson.gif"
